@@ -13,7 +13,7 @@ public class AUserDaoImpl<T> extends DaoImpl<T> implements UserDao<T>{
 	public void remove(String id) {
 		for(Object u : this.findAll()){
 			if(((AUser) u).getId().equals(id))
-				this.findAll().remove(u);
+				super.remove((T) u);
 		}
 		
 	}

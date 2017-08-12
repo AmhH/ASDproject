@@ -12,7 +12,7 @@ import edu.mum.framework.dao.impl.ARentDaoImpl;
 import edu.mum.framework.dao.impl.AUserDaoImpl;
 
 @SuppressWarnings({ "rawtypes", "unchecked" })
-public class DaoFactory {
+public class DaoFactory implements DaoFactoryI{
 	private static volatile CategoryDao categoryDao = null;
 	private static volatile CredentialDao credentialDao = null;
 	private static volatile ProductDao productDao = null;
