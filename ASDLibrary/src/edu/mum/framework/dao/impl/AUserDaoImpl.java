@@ -3,6 +3,7 @@ package edu.mum.framework.dao.impl;
 import edu.mum.framework.dao.UserDao;
 import edu.mum.framework.domain.AUser;
 
+@SuppressWarnings("unchecked")
 public class AUserDaoImpl<T> extends DaoImpl<T> implements UserDao<T>{
 
 	public AUserDaoImpl(Class<T> daoType, String className) {
@@ -11,14 +12,16 @@ public class AUserDaoImpl<T> extends DaoImpl<T> implements UserDao<T>{
 
 	@Override
 	public void remove(String id) {
-		this.findAll().remove(findOne(id));
-		write();
+		for(Object u : this.findAll()){
+			if(((AUser) u).getId().equals(id))
+				this.findAll().remove(u);
+		}
+		
 	}
 
 	@Override
-	public void update(T user) {
-		//this.findAll().remove(findOne(((AUser) user).getId()));
-		remove(((AUser) user).getId());
+	public void update(AUser user) {
+		remove(user.getId());
 		this.add((T) user);
 	}
 

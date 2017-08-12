@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="768.0" maxWidth="1024.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.mum.framework.ui.ProductUiController">
+   <children>
+     
+	<fx:include fx:id="header" source="Header.fxml" />
+
+     <AnchorPane fx:id="productLayout" prefHeight="586.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="182.0">
+         <children>
+            <Label layoutX="192.0" layoutY="68.0" text="Add Product" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="Open Sans" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="input_productname" layoutX="230.0" layoutY="143.0" promptText="Product Name">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="96.0" layoutY="146.0" text="Product Name">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="207.0" text="Rental Unit">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="266.0" text="Price per unit">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="input_priceunit" layoutX="230.0" layoutY="263.0" promptText="Price per unit">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btn_createproduct" layoutX="795.0" layoutY="502.0" mnemonicParsing="false" onAction="#createProduct" text="Create Product">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="msg_error" alignment="CENTER" layoutX="465.0" layoutY="102.0" textFill="RED" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font name="Open Sans" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="319.0" text="Description">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="input_description" layoutX="230.0" layoutY="320.0" prefHeight="100.0" prefWidth="200.0" promptText="Description">
+               <font>
+                  <Font name="Open Sans" size="14.0" />
+               </font>
+            </TextArea>
+            <ChoiceBox fx:id="input_rentalunit" layoutX="230.0" layoutY="203.0" prefHeight="34.0" prefWidth="198.0" />
+            <ChoiceBox fx:id="concrete_prod_list" layoutX="730.0" layoutY="99.0" prefHeight="34.0" prefWidth="198.0" />
+            <ScrollPane layoutX="493.0" layoutY="139.0" prefHeight="343.0" prefWidth="444.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

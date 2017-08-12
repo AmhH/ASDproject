@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appinfo>
+	<appname>Framework App</appname>
+	<windowresizable>false</windowresizable>
+	<!-- Login Background should be a JPG file of 800px x 600px  -->
+	<loginbackground>bin/edu/mum/framework/ui/images/librarybg.jpg</loginbackground>
+	<!-- Header Background should be a JPG file of 1024px x 150px -->
+	<headerbackground>bin/edu/mum/framework/ui/images/libraryTitle.jpg</headerbackground>
+	
+	<products>
+		<!-- Add the name of the Class under edu.mum.app.domain -->
+		<productclass type="book">Book</productclass>
+		<productclass type="magazine">Magazine</productclass>
+		<productclass type="audio">Audio</productclass>
+	</products>
+	<productListExtraColumns>
+		<column type="book">isbn</column>
+	</productListExtraColumns>
+</appinfo>

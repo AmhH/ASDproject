@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="768.0" maxWidth="1024.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.mum.framework.ui.HomeUiController">
+   <children>
+     
+	<fx:include fx:id="header" source="Header.fxml" />
+
+     <AnchorPane prefHeight="586.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="182.0">
+         <children>
+            <Label layoutX="192.0" layoutY="68.0" text="Welcome to" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="Open Sans" size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_checkin" layoutX="641.0" layoutY="255.0" mnemonicParsing="false" onAction="#btn_checkin" prefHeight="35.0" prefWidth="250.0" text="Check In (Return)">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="msg_error" alignment="CENTER" layoutX="465.0" layoutY="102.0" textFill="RED" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font name="Open Sans" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="app_name" layoutX="263.0" layoutY="50.0" prefHeight="40.0" prefWidth="700.0" text="Name of the project">
+               <font>
+                  <Font name="Open Sans" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="100.0" layoutY="128.0" prefHeight="88.0" prefWidth="426.0" text="This is the home of our application. The most used rental platform in the history." wrapText="true">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="100.0" layoutY="259.0" prefHeight="25.0" prefWidth="199.0" text="Products in the platform : " wrapText="true">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="100.0" layoutY="297.0" prefHeight="25.0" prefWidth="199.0" text="Users in the platform : " wrapText="true">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="100.0" layoutY="335.0" prefHeight="25.0" prefWidth="199.0" text="Available products : " wrapText="true">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="qty_available_products" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="321.0" layoutY="335.0" prefHeight="25.0" prefWidth="199.0" text="0" wrapText="true">
+               <font>
+                  <Font name="Open Sans Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="qty_users" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="321.0" layoutY="297.0" prefHeight="25.0" prefWidth="199.0" text="0" wrapText="true">
+               <font>
+                  <Font name="Open Sans Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="qty_products" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="321.0" layoutY="259.0" prefHeight="25.0" prefWidth="199.0" text="0" wrapText="true">
+               <font>
+                  <Font name="Open Sans Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="641.0" layoutY="213.0" text="Common actions">
+               <font>
+                  <Font name="Open Sans" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="213.0" text="Stats">
+               <font>
+                  <Font name="Open Sans" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_checkout" layoutX="641.0" layoutY="301.0" mnemonicParsing="false" onAction="#btn_listProducts" prefHeight="35.0" prefWidth="250.0" text="Check Out (Rent)">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_listUsers" layoutX="641.0" layoutY="348.0" mnemonicParsing="false" onAction="#btn_listuser" prefHeight="35.0" prefWidth="250.0" text="List Users">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_adduser" layoutX="641.0" layoutY="395.0" mnemonicParsing="false" onAction="#btn_adduser" prefHeight="35.0" prefWidth="250.0" text="Add New User">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_checkOverdue" layoutX="641.0" layoutY="441.0" mnemonicParsing="false" onAction="#btn_checkOverdue" prefHeight="35.0" prefWidth="250.0" text="Check Overdues">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

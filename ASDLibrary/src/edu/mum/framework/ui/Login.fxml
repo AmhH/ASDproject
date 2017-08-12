@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.mum.framework.ui.LoginController">
+   <children>
+      <ImageView fx:id="bg_image" fitHeight="600.0" fitWidth="800.0" layoutX="27.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@images/librarybg.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="43.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Label fx:id="apptitle" text="The Library System" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="58.0">
+               <font>
+                  <Font name="Open Sans" size="48.0" />
+               </font>
+            </Label>
+            <Label text="Welcome to" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="Open Sans" size="26.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="To start, type your identification number and password." AnchorPane.leftAnchor="0.5" AnchorPane.rightAnchor="0.5" AnchorPane.topAnchor="140.0" />
+            <TextField fx:id="input_idnumber" minHeight="-Infinity" minWidth="-Infinity" onAction="#input_idnumber" prefHeight="30.0" prefWidth="400.0" promptText="Identification number" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="215.0">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="input_password" minHeight="-Infinity" minWidth="-Infinity" onAction="#btn_signin" prefHeight="30.0" prefWidth="400.0" promptText="Password" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="270.0">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="btn_signin" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btn_signin" prefWidth="150.0" text="Sign In" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="330.0">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="msg_error" alignment="CENTER" layoutX="266.0" layoutY="183.0" text="" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="175.0">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

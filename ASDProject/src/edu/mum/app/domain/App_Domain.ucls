@@ -1,6 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.0" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true">  
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="edu.mum.app.domain.Member" project="ASDProject" 
+    file="/ASDProject/src/edu/mum/app/domain/Member.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="73" width="129" x="104" y="-19"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="edu.mum.app.domain.MemberCredential" project="ASDProject" 
+    file="/ASDProject/src/edu/mum/app/domain/MemberCredential.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="73" width="129" x="273" y="-19"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="edu.mum.app.domain.Magazine" project="ASDProject" 
+    file="/ASDProject/src/edu/mum/app/domain/Magazine.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="91" width="129" x="442" y="-19"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="edu.mum.app.domain.Book" project="ASDProject" 
+    file="/ASDProject/src/edu/mum/app/domain/Book.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="181" width="129" x="611" y="-19"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="edu.mum.app.domain.Audio" project="ASDProject" 
+    file="/ASDProject/src/edu/mum/app/domain/Audio.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="91" width="129" x="780" y="-19"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="edu.mum.app.domain.BorrowItem" project="ASDProject" 
+    file="/ASDProject/src/edu/mum/app/domain/BorrowItem.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="73" width="129" x="949" y="-19"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="edu.mum.app.domain.ItemCategory" project="ASDProject" 
+    file="/ASDProject/src/edu/mum/app/domain/ItemCategory.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="73" width="129" x="1118" y="-19"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

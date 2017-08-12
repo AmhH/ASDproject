@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="headerComponent" prefHeight="150.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.mum.framework.ui.HeaderController">
+   <children>
+   	<ImageView fx:id="bg_h_image" fitHeight="150.0" fitWidth="1024.0" layoutX="77.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+               <Image url="@images/libraryTitle.jpg" />
+            </image>
+         </ImageView>
+         <Label fx:id="label_loggeduser" layoutX="817.0" layoutY="67.0" text="Logged User  - Role" textAlignment="RIGHT" textFill="WHITE" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="100.0">
+            <font>
+               <Font name="Open Sans" size="18.0" />
+            </font>
+         </Label>
+         <MenuBar layoutX="70.0" layoutY="155.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="152.0">
+           <menus>
+             <Menu fx:id="menu_home" mnemonicParsing="false" onAction="#goHome" text="Home">
+               <items>
+                  <MenuItem fx:id="menu_home_item" mnemonicParsing="false" onAction="#goHome" text="Go Home" />
+               </items></Menu>
+             
+             <Menu mnemonicParsing="false" text="Users">
+               <items>
+                 <MenuItem fx:id="menu_newuser" mnemonicParsing="false" onAction="#goAddUser" text="New User" />
+                     <MenuItem fx:id="menu_list_users" mnemonicParsing="false" onAction="#goUserList" text="List Users" />
+               </items>
+             </Menu>
+             <Menu mnemonicParsing="false" text="Products">
+                <items>
+                	 <MenuItem fx:id="menu_checkout" mnemonicParsing="false" onAction="#goProductList" text="Checkout" />
+                	 <MenuItem fx:id="menu_checkin" mnemonicParsing="false" text="Check-in" />
+                   <MenuItem fx:id="menu_add_product" mnemonicParsing="false" onAction="#goAddProduct" text="Add Product to Catalog" />
+                   <MenuItem fx:id="menu_list_products" mnemonicParsing="false" onAction="#goProductList" text="List of Product" />
+                </items>
+             </Menu>
+             <Menu mnemonicParsing="false" text="Overdues">
+               <items>
+                 <MenuItem fx:id="menu_listoverdues" mnemonicParsing="false" text="List Overdues" />
+               </items>
+             </Menu>
+               <Menu mnemonicParsing="false" text="Close">
+                  <items>
+                     <MenuItem fx:id="menu_exit" mnemonicParsing="false" onAction="#closeApp" text="Sign out" />
+                  </items>
+               </Menu>
+           </menus>
+         </MenuBar>
+   </children>
+</AnchorPane>

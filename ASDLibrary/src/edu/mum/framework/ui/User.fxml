@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="768.0" maxWidth="1024.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.mum.framework.ui.UserUiController">
+   <children>
+	<fx:include fx:id="header" source="Header.fxml" />
+	
+     <AnchorPane prefHeight="586.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="182.0">
+         <children>
+            <Label fx:id="title" layoutX="192.0" layoutY="68.0" text="Add User" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="Open Sans" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="input_firstname" layoutX="220.0" layoutY="270.0" promptText="First Name">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="100.0" layoutY="273.0" text="First Name">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="input_lastname" layoutX="220.0" layoutY="320.0" promptText="Last Name">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="100.0" layoutY="323.0" text="Last Name">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="584.0" layoutY="173.0" text="Phone Number">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="input_phonenumber" layoutX="704.0" layoutY="170.0" promptText="Phone Number">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="input_address" layoutX="704.0" layoutY="220.0" promptText="Address">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="input_city" layoutX="704.0" layoutY="270.0" promptText="City">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="584.0" layoutY="223.0" text="Address">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="584.0" layoutY="323.0" text="State">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="input_state" layoutX="704.0" layoutY="320.0" promptText="State">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="584.0" layoutY="273.0" text="City">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="584.0" layoutY="373.0" text="ZipCode">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="input_zipcode" layoutX="704.0" layoutY="370.0" promptText="ZipCode">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btn_submit" layoutX="791.0" layoutY="443.0" mnemonicParsing="false" onAction="#btn_createmember" text="Create User">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="msg_error" alignment="CENTER" layoutX="465.0" layoutY="102.0" textFill="RED" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font name="Open Sans" size="13.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="input_dob" layoutX="222.0" layoutY="370.0" promptText="Birthdate" />
+            <Label layoutX="100.0" layoutY="373.0" text="Date of Birth">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="223.0" text="Password">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="172.0" text="Username">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="input_username" layoutX="220.0" layoutY="170.0" promptText="Username">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="input_password" layoutX="220.0" layoutY="220.0" promptText="Password">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="100.0" layoutY="118.0" text="Role">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="input_role" layoutX="222.0" layoutY="116.0" prefWidth="198.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
