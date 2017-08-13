@@ -3,7 +3,6 @@ package edu.mum.framework.dao.impl;
 import edu.mum.framework.dao.ProductDao;
 import edu.mum.framework.domain.AProduct;
 
-@SuppressWarnings("unchecked")
 public class AProductDaoImpl<T> extends DaoImpl<T> implements ProductDao<T> {
 
 	public AProductDaoImpl(Class<T> daoType, String className) {

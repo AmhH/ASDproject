@@ -17,4 +17,24 @@ public class ARentDaoImpl<T> extends DaoImpl<T> implements RentDao<T>{
 				  .orElse(null);
 	}
 
+	@Override
+	public void update(T rent) {
+		remove(((ARent) rent).getRentId());
+		this.add((T)rent);		
+	}
+
+	@Override
+	public T findOneById(String id) {
+		return this.findAll().stream()
+				  			 .filter(p -> ((ARent)p).getRentId().equals(id))
+				  			 .findFirst()
+				  			 .orElse(null);
+	}
+
+	@Override
+	public void remove(String id) {
+		this.findAll().remove(findOneById(id));
+		write();
+	}
+
 }

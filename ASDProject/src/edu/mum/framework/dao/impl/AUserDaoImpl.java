@@ -13,7 +13,6 @@ public class AUserDaoImpl<T> extends DaoImpl<T> implements UserDao<T>{
 	public void remove(String id) {
 		this.findAll().remove(findOne(id));
 		write();
-		System.out.println("A");
 	}
 
 	@Override
