@@ -1,7 +1,5 @@
 package edu.mum.app.domain;
 
-import java.io.Serializable;
-
 import edu.mum.framework.domain.AProduct;
 import edu.mum.framework.domain.Unit;
 

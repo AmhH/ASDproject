@@ -1,18 +1,12 @@
 package edu.mum.app.test;
 
-import java.time.LocalDate;
-import java.util.List;
-
 import edu.mum.app.dao.BookDao;
-import edu.mum.app.dao.MemberDao;
 import edu.mum.app.domain.Book;
-import edu.mum.app.domain.Member;
 import edu.mum.app.service.BookService;
-import edu.mum.app.service.MemberService;
-import edu.mum.framework.domain.Unit;
 
 public class MainTest {
  
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		BookService bookService=new BookService(new BookDao());
 		//MemberService memberService = new MemberService(new MemberDao());
