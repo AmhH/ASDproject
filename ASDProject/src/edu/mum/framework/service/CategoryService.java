@@ -2,7 +2,6 @@ package edu.mum.framework.service;
 
 import java.util.List;
 
-import edu.mum.framework.domain.ACategory;
 import edu.mum.framework.domain.concrete.Category;
 
 public interface CategoryService{
