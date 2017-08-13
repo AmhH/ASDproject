@@ -15,13 +15,13 @@ public class MainTest {
  
 	public static void main(String[] args) {
 		BookService bookService=new BookService(new BookDao());
-		MemberService memberService = new MemberService(new MemberDao());
-		Member member = (Member) memberService.findOneUser("1");//new Member();
-		member.setDob(LocalDate.now());
-		/*member.setId("1");
-		member.setFirstName("Aman");*/
-		memberService.updateUser(member);
-		System.out.println(memberService.findAllUser());
+		//MemberService memberService = new MemberService(new MemberDao());
+		Book book = bookService.findOneProduct("productId");//new Book("productName", "productId", "productDesc", true, 12.4, "Sports", Unit.DAILY);
+		/*book.setProdcutName("Book");
+		book.setCategory("Aman");
+		bookService.updateProductById(book);*/
+		//bookService.saveProduct(book);
+		System.out.println(bookService.findAllProduct());
 		/*Book book=bookService.findOneProduct("productId2");
 		book.setProdcutName("Updated one");
 		

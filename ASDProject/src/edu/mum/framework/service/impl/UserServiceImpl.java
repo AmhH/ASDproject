@@ -30,8 +30,8 @@ public class  UserServiceImpl<T> implements UserService<T>{
 
 	@Override
 	public void updateUser(T user) {
-	   //userDao.update(user)
 		
+	   userDao.update(user);  System.out.println("service");
 	}
 
 	@Override

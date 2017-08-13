@@ -17,8 +17,8 @@ public class AProductDaoImpl<T> extends DaoImpl<T> implements ProductDao<T> {
 		}
 
 	@Override
-	public void update(AProduct product) {
-		remove(product.getProductId());
+	public void update(T product) {
+		remove(((AProduct) product).getProductId());
 		this.add((T)product);
 	}
 

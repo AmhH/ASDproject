@@ -35,7 +35,7 @@ public class RentServiceImpl<T> implements RentService<T> {
 		List<AProduct> listRentProduct = ((Rent) rent).getRentedProducts();
 		for (AProduct p :listRentProduct) {
 			p.setStatus(false);
-			productDao.update(p);
+			productDao.update((T) p);
 		}
 		rentDao.add(rent);
 
@@ -98,7 +98,7 @@ public class RentServiceImpl<T> implements RentService<T> {
 		if(listRentProduct.size()>0){
 		for (AProduct p :listRentProduct) {
 			p.setStatus(true);
-			productDao.update(p);
+			productDao.update((T) p);
 		}
 		return true;
 		}
